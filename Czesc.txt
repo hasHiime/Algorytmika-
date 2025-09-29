@@ -1,0 +1,26 @@
+tablica = [1, 2, 3, 5, 7, 8, 10, 12, 15, 21, 37, 50, 55]
+r = len(tablica) / 2
+table_length = round(r)
+szukana : int = input("Jakiej liczby szukasz: ")
+
+l = 0
+p = len(tablica)
+sr = (l+p)/2
+
+def zaokroglij(wartosc):
+    zaokr = round(wartosc)
+    return(zaokr)
+
+def szukanie(szk, tab, lewo, prawo, srodek):
+    srodek = zaokroglij(srodek)
+    while lewo <= prawo:
+        if tab[srodek] == szk:
+            return(srodek)
+        if tab[srodek] > szk:
+            prawo = srodek - 1
+        else:
+            lewo = srodek + 1
+        srodek = (lewo+prawo)/2 
+        return(-1)
+    
+print("Liczba", szukana, "znajduje się w zbiorze w komurce o indexie:", szukanie(szukana, tablica, l , p, sr))
