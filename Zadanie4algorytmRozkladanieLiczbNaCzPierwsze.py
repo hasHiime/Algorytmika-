@@ -1,12 +1,14 @@
 n = int(input("Wprowadź liczbę: "))
 
-def rozkladLiczb(n):
+zbior = []
+
+def rozkladLiczb(n, zbior):
     k = 2
     while n > 1:
         while n % k == 0:
-            print(k)
+            zbior.append(k)
             n = n / k
-            print(n)
         k += 1
 
-rozkladLiczb(n)
+rozkladLiczb(n, zbior)
+print("Czynniki pierwsze liczby",n,":", *zbior)
