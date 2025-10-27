@@ -11,4 +11,4 @@ def czylpierwsza(n):
             return (n, "Nie jest liczbą pierwszą")
     return (n, "Jest liczbą pierwszą")
 
-print(czylpierwsza(n))
+print(*czylpierwsza(n))
