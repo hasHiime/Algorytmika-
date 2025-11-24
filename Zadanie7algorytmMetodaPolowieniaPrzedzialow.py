@@ -31,4 +31,6 @@ def PolowieniePrzedzialow(a, b, epsilon):
         else:
             a = srodek
     return (a+b)/2        
-print("Znalezione miejsce zerowe wynosi: ", PolowieniePrzedzialow(a, b, epsilon))
+
+wynik = PolowieniePrzedzialow(a, b, epsilon)
+print(f"Znalezione miejsce zerowe wynosi: {wynik:.5f}")
