@@ -18,7 +18,7 @@ def Merge(tab, l, m, r):
 
     indexL = 0
     indexR = 0
-    currIndex = 1
+    currIndex = l
 
     while indexL < lSize and indexR < rSize:
         if tabL[indexL] <= tabR[indexR]:
@@ -30,12 +30,14 @@ def Merge(tab, l, m, r):
         currIndex += 1
     
     while indexL < lSize:
-        tab[currIndex + 1] = tabL[indexL]
+        tab[currIndex] = tabL[indexL]
         indexL += 1
+        currIndex +=1
     
     while indexR < rSize:
-        tab[currIndex + 1] = tabR[indexR]
+        tab[currIndex] = tabR[indexR]
         indexR += 1
+        currIndex +=1
 
 tab = [70, 36, 86, 71, 22, 71, 89, 77]
 
