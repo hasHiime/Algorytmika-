@@ -12,9 +12,8 @@ def Merge(tab, l, m, r):
     tabR = [0] * rSize
     for x in range(lSize):
         tabL[x] = tab[l + x]
-        print(tabL)
     for y in range(rSize):
-        tabR[y] = tab[m+1-y]
+        tabR[y] = tab[m+1+y]
 
     indexL = 0
     indexR = 0
@@ -41,6 +40,16 @@ def Merge(tab, l, m, r):
 
 tab = [70, 36, 86, 71, 22, 71, 89, 77]
 
-inp = input("Wprowadź liczbe elementów do posortowania: ")
+print("\nTablica przed posortowaniem:")
+for x in tab:
+    print(f"{x} | ", end="")
+print("\n")
 
-print(MergeSort(tab, 0, len(tab) - 1))
+print("Rozpoczynanie sortowania")
+
+MergeSort(tab, 0, len(tab)-1)
+
+print("\nTablica po posortowaniu:")
+for x in tab:
+    print(f"{x} | ", end="")
+print("\n")
