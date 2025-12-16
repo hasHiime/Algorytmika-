@@ -1,12 +1,16 @@
-liczba = int(input("Podaj liczbę: "))
-tablica = []
-i = 0
+def obliczanie(liczba):
+        tablica = []
+        while liczba != 0:
+            tablica.append(liczba % 2)
+            liczba = liczba // 2
+        return tablica
 
-def obliczanie(tablica, i, liczba):
-    while liczba != 0:
-        tablica.append(liczba % 2)
-        liczba = liczba // 2
 
-obliczanie(tablica, i, liczba)
+def main():
+    liczba = int(input("Podaj liczbę: "))
+    wynik = obliczanie(liczba)
 
-print("Liczba", liczba, "po zamianie na postac binarna:", *tablica[::-1])
+    print("Liczba", liczba, "po zamianie na postać binarną:", *wynik[::-1])
+
+if __name__=="__main__":
+    main()
