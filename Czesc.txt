@@ -24,3 +24,6 @@ def szukanie(szk, tab, lewo, prawo, srodek):
         return(-1)
     
 print("Liczba", szukana, "znajduje się w zbiorze w komurce o indexie:", szukanie(szukana, tablica, l , p, sr))
+
+
+zmiana
