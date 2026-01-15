@@ -38,18 +38,22 @@ def Merge(tab, l, m, r):
         indexR += 1
         currIndex +=1
 
-tab = [70, 36, 86, 71, 22, 71, 89, 77]
+def main():
+    tab = [70, 36, 86, 71, 22, 71, 89, 77,]
 
-print("\nTablica przed posortowaniem:")
-for x in tab:
-    print(f"{x} | ", end="")
-print("\n")
+    print("\nTablica przed posortowaniem:")
+    for x in tab:
+        print(f"{x} | ", end="")
+    print("\n")
 
-print("Rozpoczynanie sortowania")
+    print("Rozpoczynanie sortowania")
 
-MergeSort(tab, 0, len(tab)-1)
+    MergeSort(tab, 0, len(tab)-1)
 
-print("\nTablica po posortowaniu:")
-for x in tab:
-    print(f"{x} | ", end="")
-print("\n")
+    print("\nTablica po posortowaniu:")
+    for x in tab:
+        print(f"{x} | ", end="")
+    print("\n")
+
+if __name__ == "__main__":
+    main()
