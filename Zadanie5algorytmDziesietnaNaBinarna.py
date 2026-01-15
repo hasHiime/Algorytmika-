@@ -2,7 +2,7 @@ def obliczanie(liczba):
         tablica = []
         while liczba != 0:
             tablica.append(liczba % 2)
-            liczba = liczba // 2
+            liczba = liczba //= 2
         return tablica
 
 
