@@ -1,9 +1,6 @@
 def f(x):
     return x*(x*(x-3)+2)-6
 
-a = -10
-b = 10
-epsilon = 0.00001
 
 # def PolowieniePrzedzialow(a, b, epsilon):
 #     srodek = (a+b)/2
@@ -32,5 +29,13 @@ def PolowieniePrzedzialow(a, b, epsilon):
             a = srodek
     return (a+b)/2        
 
-wynik = PolowieniePrzedzialow(a, b, epsilon)
-print(f"Znalezione miejsce zerowe wynosi: {wynik:.5f}")
+def main():
+    a = -10
+    b = 10
+    epsilon = 0.00001
+    wynik = PolowieniePrzedzialow(a, b, epsilon)
+    print(f"Znalezione miejsce zerowe wynosi: {wynik:.5f}")
+
+
+if __name__ == "__main__":
+    main()
