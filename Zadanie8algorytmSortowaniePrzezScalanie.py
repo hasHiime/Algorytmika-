@@ -39,7 +39,7 @@ def Merge(tab, l, m, r):
         currIndex +=1
 
 def main():
-    tab = [70, 36, 86, 71, 22, 71, 89, 77,]
+    tab = [70, 36, 86, 71, 22, 71, 89, 77]
 
     print("\nTablica przed posortowaniem:")
     for x in tab:
